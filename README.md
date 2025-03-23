@@ -1,4 +1,3 @@
-
 ## Getting started
 
 To get started, first install dependencies via npm:

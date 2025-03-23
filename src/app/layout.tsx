@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'Commit is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary.',
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      'application/rss+xml': `${process.env.VERCEL_URL}/feed.xml`,
     },
   },
 }
