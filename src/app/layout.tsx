@@ -34,6 +34,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   const config = await getConfig()
+  const isReset = Boolean(config.client_id)
 
   return (
     <html
@@ -41,7 +42,12 @@ export default async function RootLayout({
       className={clsx('h-full antialiased', inter.variable, monaSans.variable)}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col bg-gray-950">
+      <body
+        className={clsx(
+          'flex min-h-full bg-gray-950',
+          isReset ? 'flex-col-reverse' : 'flex-col',
+        )}
+      >
         <FixedSidebar main={<Intro />} footer={<IntroFooter />} />
         <Toolbar clientId={config.client_id} />
         <div className="relative flex-auto">

@@ -1,6 +1,5 @@
 'use client'
 
-import { setConfigValues } from '@/actions/actions'
 import { syncTartleData } from '@/actions/formActions'
 import { useState } from 'react'
 import { useActionState } from 'react'
@@ -17,11 +16,6 @@ const DataSync = ({
     message: '',
   })
   const [packetId, setPacketId] = useState<string>(initialPacketId)
-
-  const handleReset = async () => {
-    await setConfigValues({})
-    window.location.href = '/'
-  }
 
   const data = {
     name: 'John Doe',
@@ -70,12 +64,6 @@ const DataSync = ({
         className="mt-4 w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white"
       >
         Sync Data
-      </button>
-      <button
-        className="w-full cursor-pointer rounded-md bg-red-500 p-2 text-white"
-        onClick={handleReset}
-      >
-        Reset client config
       </button>
     </form>
   )

@@ -4,6 +4,7 @@ import { updateSettings } from '@/actions/formActions'
 import { useActionState } from 'react'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
+import { setConfigValues } from '@/actions/actions'
 
 export default function Settings({
   setIsOpen,
@@ -17,6 +18,11 @@ export default function Settings({
     message: '',
   })
   const [reloadMessage, setReloadMessage] = React.useState(false)
+
+  const handleReset = async () => {
+    await setConfigValues({})
+    window.location.href = '/'
+  }
 
   React.useEffect(() => {
     if (state.message === 'Settings updated successfully!') {
@@ -78,6 +84,12 @@ export default function Settings({
                 type="submit"
               >
                 Update Settings
+              </button>
+              <button
+                className="w-full cursor-pointer rounded-md bg-red-500 p-2 text-white"
+                onClick={handleReset}
+              >
+                Reset all settings
               </button>
             </form>
           </div>
