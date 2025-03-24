@@ -51,12 +51,14 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        OAuth Credentials Test{' '}
-        <span className="text-sky-300">for TARTLE DataVault Clients</span>
+        Test your credentials{' '}
+        <span className="text-sky-300">
+          for TARTLE OAuth 2.0 DataVault Clients
+        </span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         Enter your OAuth 2.0 client credentials using the cog icon in the top
-        left corner, then you can test Authorization, refresh and pushing data
+        right corner, then you can test Authorization, refresh and pushing data
         onto TARTLE
       </p>
 
