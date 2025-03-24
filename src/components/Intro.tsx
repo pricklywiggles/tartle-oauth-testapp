@@ -1,8 +1,6 @@
 import Link from 'next/link'
-
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
-import { SignUpForm } from '@/components/SignUpForm'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -44,29 +42,30 @@ export function Intro() {
   return (
     <>
       <div>
-        <Link href="/">
+        <Link className="flex items-center gap-x-2 text-custom-teal" href="/">
           <Logo className="inline-block h-8 w-auto" />
+          <span className="align-baseline text-xl font-bold text-custom-teal">
+            {' '}
+            TARTLE
+          </span>
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        Open-source Git client{' '}
-        <span className="text-sky-300">for macOS minimalists</span>
+        OAuth Credentials Test{' '}
+        <span className="text-sky-300">for TARTLE DataVault Clients</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Commit is a lightweight Git client you can open from anywhere any time
-        you’re ready to commit your work with a single keyboard shortcut. It’s
-        fast, beautiful, and completely unnecessary.
+        Enter your OAuth 2.0 client credentials using the cog icon in the top
+        left corner, then you can test Authorization, refresh and pushing data
+        onto TARTLE
       </p>
-      <SignUpForm />
+
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink href="#" icon={BookIcon} className="flex-none">
           Documentation
         </IconLink>
         <IconLink href="#" icon={GitHubIcon} className="flex-none">
           GitHub
-        </IconLink>
-        <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
-          RSS
         </IconLink>
       </div>
     </>
@@ -77,8 +76,8 @@ export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       Brought to you by{' '}
-      <IconLink href="#" icon={XIcon} compact>
-        Joe Davola
+      <IconLink href="https://x.com/TARTLEofficial" icon={XIcon} compact>
+        TARTLE
       </IconLink>
     </p>
   )

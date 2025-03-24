@@ -1,23 +1,4 @@
 .typography {
-  --typography-body: var(--color-gray-600);
-  --typography-headings: var(--color-gray-900);
-  --typography-quotes: var(--color-gray-500);
-  --typography-quotes-border: var(--color-gray-200);
-  --typography-links: var(--color-sky-500);
-  --typography-link-hover: var(--color-sky-600);
-  --typography-link-underline: --theme(--color-sky-400 / 0.4);
-  --typography-link-hover-underline: --theme(--color-sky-600 / 0.4);
-  --typography-pre: var(--color-gray-300);
-  --typography-pre-shadow: var(--shadow-md);
-  --typography-bold: var(--color-gray-900);
-  --typography-kbd: var(--color-gray-600);
-  --typography-kbd-border: var(--color-gray-200);
-  --typography-kbd-bg: var(--color-gray-50);
-  --typography-code: var(--color-gray-900);
-  --typography-hr: --theme(--color-gray-900 / 0.05);
-  --typography-th-borders: --theme(--color-gray-900 / 0.2);
-  --typography-td-borders: --theme(--color-gray-900 / 0.05);
-
   --shiki-color-text: var(--color-white);
   --shiki-token-constant: var(--color-emerald-300);
   --shiki-token-string: var(--color-emerald-300);
@@ -28,26 +9,24 @@
   --shiki-token-string-expression: var(--color-emerald-300);
   --shiki-token-punctuation: var(--color-gray-200);
 
-  .dark & {
-    --typography-body: var(--color-gray-300);
-    --typography-headings: var(--color-white);
-    --typography-quotes: var(--color-gray-400);
-    --typography-quotes-border: var(--color-gray-800);
-    --typography-links: var(--color-sky-400);
-    --typography-link-hover: var(--color-white);
-    --typography-link-underline: --theme(--color-sky-400 / 0.4);
-    --typography-link-hover-underline: --theme(--color-white / 0.4);
-    --typography-pre: var(--color-gray-400);
-    --typography-pre-shadow: inset 0 0 0 1px --theme(--color-white / 0.1);
-    --typography-bold: var(--color-white);
-    --typography-kbd: var(--color-white);
-    --typography-kbd-border: var(--color-gray-800);
-    --typography-kbd-bg: var(--color-gray-900);
-    --typography-code: var(--color-white);
-    --typography-hr: --theme(--color-white / 0.1);
-    --typography-th-borders: --theme(--color-white / 0.1);
-    --typography-td-borders: --theme(--color-white / 0.05);
-  }
+  --typography-body: var(--color-gray-300);
+  --typography-headings: var(--color-white);
+  --typography-quotes: var(--color-gray-400);
+  --typography-quotes-border: var(--color-gray-800);
+  --typography-links: var(--color-sky-400);
+  --typography-link-hover: var(--color-white);
+  --typography-link-underline: --theme(--color-sky-400 / 0.4);
+  --typography-link-hover-underline: --theme(--color-white / 0.4);
+  --typography-pre: var(--color-gray-400);
+  --typography-pre-shadow: inset 0 0 0 1px --theme(--color-white / 0.1);
+  --typography-bold: var(--color-white);
+  --typography-kbd: var(--color-white);
+  --typography-kbd-border: var(--color-gray-800);
+  --typography-kbd-bg: var(--color-gray-900);
+  --typography-code: var(--color-white);
+  --typography-hr: --theme(--color-white / 0.1);
+  --typography-th-borders: --theme(--color-white / 0.1);
+  --typography-td-borders: --theme(--color-white / 0.05);
 
   color: var(--typography-body);
   font-size: var(--text-sm);
