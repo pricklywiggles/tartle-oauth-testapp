@@ -22,7 +22,10 @@ export const pushSellersPacket = async (
   )
   const responseData = isJson(response) ? await response.json() : null
 
-  console.log({ status: response.status, responseData })
+  console.log({
+    status: response.status,
+    responseData: JSON.stringify(responseData),
+  })
 
   if (!response.ok) {
     throw new Error(

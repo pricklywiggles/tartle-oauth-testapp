@@ -47,7 +47,6 @@ export const setConfigValues = async (settings: Partial<Settings>) => {
   `
 
   const result = (await sql(query, [userId, ...values])) as Settings[]
-  console.log('result', { result })
   return result[0]
 }
 
@@ -63,8 +62,6 @@ export const getConfig = async () => {
   const result = (await sql('SELECT * FROM user_settings WHERE user_id = $1', [
     userId,
   ])) as Settings[]
-
-  console.log('config', { result })
 
   if (!result[0]) {
     return {

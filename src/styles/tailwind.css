@@ -13,8 +13,7 @@
   --color-custom-blue: hsl(220, 60%, 15%);
 }
 
-.dvc-button {
-  --text-color: hsl(180, 100%, 12%);
+.tartle-datavault-connect-button {
   margin: 0 auto;
   display: flex;
   width: fit-content;
@@ -24,32 +23,30 @@
   color: hsl(180, 100%, 12%);
   white-space: nowrap;
   font-family: 'Inter', sans-serif;
-
   font-weight: bold;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  letter-spacing: normal;
   font-size: 0.875rem;
   transition:
     background-color 0.2s ease-in-out,
     scale 0.15s ease-in-out;
 }
 
-.dvc-button:hover {
+.tartle-datavault-connect-button:hover {
   text-decoration: none;
   background-color: hsla(170, 72%, 42%);
 }
 
-.dvc-button span {
+.tartle-datavault-connect-button span {
   margin-left: 0.5rem;
 }
 
-.dvc-button .logo-container {
+.tartle-datavault-connect-button .logo-container {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.dvc-button .logo-container svg {
+.tartle-datavault-connect-button .logo-container svg {
   width: 1.5rem;
   height: 1.5rem;
   color: hsl(180, 100%, 12%);
@@ -57,13 +54,13 @@
   grid-column-start: 1;
 }
 
-.dvc-button:hover .tartle-logo {
+.tartle-datavault-connect-button:hover .tartle-logo {
   opacity: 0;
   rotate: 180deg;
   animation: pulse 0.3s ease-in-out;
 }
 
-.dvc-button:hover .logo-cube {
+.tartle-datavault-connect-button:hover .logo-cube {
   opacity: 1;
   rotate: 360deg;
   animation: pulse 0.3s ease-in-out;
@@ -78,20 +75,18 @@
 }
 .tartle-logo {
   opacity: 1;
-  scale: 1;
   rotate: 0deg;
 }
 .logo-cube {
   opacity: 0;
-  scale: 1;
   rotate: 180deg;
 }
 
-.dvc-button:active {
+.tartle-datavault-connect-button:active {
   scale: 0.95;
 }
 
-.dvc-button:active .logo-cube {
+.tartle-datavault-connect-button:active .logo-cube {
   scale: 0.35;
 }
 

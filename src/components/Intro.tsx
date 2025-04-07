@@ -61,7 +61,7 @@ export function Intro() {
           Enter your OAuth 2.0 client credentials using the cog icon in the top
           right corner
         </span>
-        , then you can test Authorization, refresh and pushing data onto TARTLE
+        , then you can test Authorization, refresh and push data onto TARTLE
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">

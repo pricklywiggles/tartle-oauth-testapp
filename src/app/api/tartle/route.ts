@@ -7,11 +7,9 @@ export async function GET(request: Request) {
   const authorizationCode = searchParams.get('code')
   const endpointUri = process.env.NEXT_PUBLIC_TARTLE_API_URI + '/oauth/token'
 
-  const testAppUserId = await getId(request.headers)
-
   const config = await getConfig()
 
-  console.log({ config })
+  console.log({ config, searchParams })
 
   const params = {
     code: authorizationCode,
